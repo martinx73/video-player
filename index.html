@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="player">            
+            <div class="player-overlay">
+                <h2 class="player-title">Big Buck BUNNY</h2>
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="retrocede 10 segundos" title="retrocede 10 segundos"></button>
+                    <button class="button" id="play" aria-label="reproducir" title="reproducir"></button>
+                    <button class="button" hidden id="pause" aria-label="pausa" title="pausa"></button>
+                    <button class="button" id="forward" aria-label="adelanta 10 segundos" title="adelanta 10 segundos"></button>    
+                </div>
+                    <!-- <video id="video" poster="images/poster.jpg" muted controls src="videos/lofi.mp4" width="400"></video> -->
+                    <div class="player-progress">
+                        <!-- <input type="range" min="0" max="100" step="1"> -->
+                        <input id="progress" type="range" min="0" value="0" step=".5">
+                    </div>
+            </div>
+            <video id="video" loop poster="images/bunny.jpg" src="https://download.blender.org/peach/trailer/trailer_400p.ogg" width="400"></video>
+        </div>
+    </div>
+
+    <script src="js/mijs.js"></script>
+</body>
+</html>
